@@ -35,27 +35,26 @@ in all eight files (`grep -rl 'nav-links' .`).
 
 ---
 
-## 1. Wire up the contact form (2 minutes)
+## 1. Contact form — configured
 
-The form posts to [Formspree](https://formspree.io). Until you connect it, submitting
-shows an error telling the visitor to email instead — it never silently drops a lead.
+The form in `contact/index.html` posts to Formspree:
 
-1. Create a free account at **formspree.io** and add a new form.
-2. Copy the endpoint, which looks like `https://formspree.io/f/xdkoblqz`.
-3. In `contact/index.html`, replace the placeholder:
+```
+https://formspree.io/f/mdeoaejw
+```
 
-   ```html
-   <form ... action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-   ```
+**Confirm it once:** Formspree requires the form owner to verify the first
+submission. Submit the live form yourself and click the confirmation link in the
+email Formspree sends, otherwise later submissions are held.
 
-4. Submit the form once yourself — Formspree asks you to confirm the first submission.
+Free tier is 50 submissions/month with an inbox and dashboard at formspree.io.
+Spam is filtered server-side, and a honeypot field (`_gotcha`) is the first line
+of defence. If the endpoint is ever unset, `site.js` shows a visible error telling
+the visitor to email instead — it never silently drops a lead.
 
-Free tier is 50 submissions/month with an inbox and dashboard. Spam is filtered
-server-side, and there's a honeypot field (`_gotcha`) in the markup as a first line.
-
-**To use something else instead** (Web3Forms, Getform, your own endpoint): change the
-`action` attribute. `assets/js/site.js` posts `FormData` with `Accept: application/json`
-and treats any non-2xx as an error, which most form backends support.
+To change backends (Web3Forms, Getform, your own), just swap the `action`
+attribute: `site.js` posts `FormData` with `Accept: application/json` and treats
+any non-2xx as an error.
 
 ---
 
