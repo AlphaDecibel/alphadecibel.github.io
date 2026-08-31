@@ -72,8 +72,12 @@ Every push to `main` republishes within a minute or two.
 
 ## 3. Point www.alphadecibel.com at it
 
-`CNAME` in this repo already contains `www.alphadecibel.com`. Add these records at
-your DNS provider (the apex A/AAAA records make the bare domain redirect to `www`):
+**The `CNAME` file is currently parked in `_disabled/`.** Leave it there until DNS
+resolves — GitHub 301-redirects `alphadecibel.github.io` to the custom domain the
+moment it sees that file, which would break the preview URL.
+
+Add these records at your DNS provider (the apex A/AAAA records make the bare
+domain redirect to `www`):
 
 | Type  | Name  | Value                                      |
 |-------|-------|--------------------------------------------|
@@ -87,9 +91,16 @@ your DNS provider (the apex A/AAAA records make the bare domain redirect to `www
 | AAAA  | `@`   | `2606:50c0:8002::153`                       |
 | AAAA  | `@`   | `2606:50c0:8003::153`                       |
 
-Then in **Settings → Pages → Custom domain**, enter `www.alphadecibel.com` and tick
-**Enforce HTTPS** once the certificate provisions (usually under an hour, occasionally
-up to 24).
+Once those records resolve, turn the domain on:
+
+```bash
+git mv _disabled/CNAME CNAME
+git commit -m "Enable custom domain"
+git push
+```
+
+Then in **Settings → Pages**, tick **Enforce HTTPS** once the certificate provisions
+(usually under an hour, occasionally up to 24).
 
 ---
 
