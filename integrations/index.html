@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Integrations — Overtone by AlphaDecibel</title>
+<meta name="description" content="60+ connectors for Amazon Connect, Genesys, Avaya, RingCentral, NICE CXone, Five9, Talkdesk, Verint, Calabrio, Salesforce, Dynamics, Snowflake, Power BI and more — plus a documented REST API.">
+<link rel="canonical" href="https://www.alphadecibel.com/integrations/">
+<meta name="theme-color" content="#08090D">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.alphadecibel.com/integrations/">
+<meta property="og:title" content="Integrations — Overtone by AlphaDecibel">
+<meta property="og:description" content="60+ connectors for Amazon Connect, Genesys, Avaya, RingCentral, NICE CXone, Five9, Talkdesk, Verint, Calabrio, Salesforce, Dynamics, Snowflake, Power BI and more — plus a documented REST API.">
+<meta property="og:image" content="https://www.alphadecibel.com/assets/img/og.png">
+<meta property="og:site_name" content="AlphaDecibel">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Integrations — Overtone by AlphaDecibel">
+<meta name="twitter:description" content="60+ connectors for Amazon Connect, Genesys, Avaya, RingCentral, NICE CXone, Five9, Talkdesk, Verint, Calabrio, Salesforce, Dynamics, Snowflake, Power BI and more — plus a documented REST API.">
+<meta name="twitter:image" content="https://www.alphadecibel.com/assets/img/og.png">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body class="grid-bg">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="shell nav-in">
+    <a class="brand" href="/" aria-label="Overtone by AlphaDecibel — home">
+      <svg class="brand-mark" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+        <rect x=".9" y=".9" width="24.2" height="24.2" rx="7.4" stroke="url(#m1)" stroke-width="1.4"/>
+        <g stroke="url(#m1)" stroke-width="2.1" stroke-linecap="round">
+          <path d="M7 16.4V9.6"/><path d="M11.3 19.4V6.6"/><path d="M15.6 17.6V8.4"/><path d="M19.9 14.4v-2.8"/>
+        </g>
+        <defs><linearGradient id="m1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="26" y2="26"><stop stop-color="#4DE1E0"/><stop offset="1" stop-color="#7B5CFF"/></linearGradient></defs>
+      </svg>
+      <span class="brand-txt"><span class="brand-name">Overtone</span><span class="brand-sub">by AlphaDecibel</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="/platform/">Platform</a>
+      <a href="/solutions/">Solutions</a>
+      <a href="/integrations/" aria-current="page">Integrations</a>
+      <a href="/security/">Security</a>
+      <a href="/company/">Company</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-ghost btn-sm" href="/contact/">Contact</a>
+      <a class="btn btn-primary btn-sm" href="/contact/#demo">Book a demo</a>
+    </div>
+    <button class="burger" aria-expanded="false" aria-controls="mmenu" aria-label="Toggle menu"><span></span></button>
+  </div>
+</header>
+<div class="mobile-menu" id="mmenu">
+  <a href="/platform/">Platform</a>
+  <a href="/solutions/">Solutions</a>
+  <a href="/integrations/">Integrations</a>
+  <a href="/security/">Security</a>
+  <a href="/company/">Company</a>
+  <a href="/contact/">Contact</a>
+  <a class="btn btn-primary" href="/contact/#demo">Book a demo</a>
+</div>
+<main id="main">
+<section class="phero">
+  <div class="aura phero-aura"></div>
+  <div class="shell">
+    <div class="crumb"><a href="/">Home</a><i>/</i>Integrations</div>
+    <span class="tag" data-hero="1">Integrations</span>
+    <h1 data-hero="2">Works with the stack<br>you already bought.</h1>
+    <p class="lede" data-hero="3">Overtone is not a replacement for your telephony platform, your recorder, or your workforce management suite. It is the analysis layer that sits across all of them — reads what they capture, and writes results back where your teams already work.</p>
+    <div class="hero-note" data-hero="5" style="margin-top:1.8rem">
+      <span><i class="dot"></i> 60+ certified connectors</span>
+      <span><i class="dot dot-v"></i> REST API and webhooks</span>
+      <span><i class="dot dot-a"></i> Custom connectors in ~2 weeks</span>
+    </div>
+  </div>
+</section>
+
+<!-- HOW -->
+<section class="sec-tight rule">
+  <div class="shell">
+    <div class="cols c3">
+      <article class="card" data-reveal>
+        <span class="card-num">01</span>
+        <h3>Connect</h3>
+        <p>Authenticate once against your platform's API with a service account scoped to read recordings and call metadata. No agent desktop install, no network appliance, no change to how calls are routed or recorded.</p>
+      </article>
+      <article class="card" data-reveal data-d="1">
+        <span class="card-num">02</span>
+        <h3>Sync</h3>
+        <p>Overtone discovers completed calls and pulls audio plus metadata — agent, queue, disposition, duration, and any custom attributes you already tag. Live-stream mode is available where the platform supports it.</p>
+      </article>
+      <article class="card" data-reveal data-d="2">
+        <span class="card-num">03</span>
+        <h3>Push back</h3>
+        <p>Scores, coaching tasks, sentiment, and risk flags flow into your WFM, CRM, and BI stack. Your teams keep working in the tools they know; the intelligence just shows up there.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- TELEPHONY -->
+<section class="sec alt rule" id="telephony">
+  <div class="shell">
+    <div class="sec-head" data-reveal>
+      <span class="tag">Telephony &amp; CCaaS</span>
+      <h2>Where the conversations happen.</h2>
+      <p>Certified connectors for the platforms that run modern contact centers, cloud and on-premises alike. If your platform can hand us audio and a call record, we can analyze it.</p>
+    </div>
+    <div class="intg" data-reveal>
+      <div class="intg-item"><i></i><span>Amazon Connect</span></div>
+      <div class="intg-item"><i></i><span>Genesys Cloud CX</span></div>
+      <div class="intg-item"><i></i><span>Genesys Engage</span></div>
+      <div class="intg-item"><i></i><span>Avaya Experience Platform</span></div>
+      <div class="intg-item"><i></i><span>Avaya Aura</span></div>
+      <div class="intg-item"><i></i><span>NICE CXone</span></div>
+      <div class="intg-item"><i></i><span>Cisco Webex Contact Center</span></div>
+      <div class="intg-item"><i></i><span>Cisco UCCE / UCCX</span></div>
+      <div class="intg-item"><i></i><span>RingCentral RingCX</span></div>
+      <div class="intg-item"><i></i><span>RingCentral MVP</span></div>
+      <div class="intg-item"><i></i><span>Five9</span></div>
+      <div class="intg-item"><i></i><span>Talkdesk</span></div>
+      <div class="intg-item"><i></i><span>Twilio Flex</span></div>
+      <div class="intg-item"><i></i><span>8x8 XCaaS</span></div>
+      <div class="intg-item"><i></i><span>Zoom Contact Center</span></div>
+      <div class="intg-item"><i></i><span>Microsoft Teams Phone</span></div>
+      <div class="intg-item"><i></i><span>Salesforce Service Cloud Voice</span></div>
+      <div class="intg-item"><i></i><span>Vonage Contact Center</span></div>
+      <div class="intg-item"><i></i><span>Dialpad</span></div>
+      <div class="intg-item"><i></i><span>Mitel MiContact Center</span></div>
+      <div class="intg-item"><i></i><span>Alvaria CX</span></div>
+      <div class="intg-item"><i></i><span>Nextiva</span></div>
+      <div class="intg-item soon"><i></i><span>Content Guru storm — Q4</span></div>
+      <div class="intg-item soon"><i></i><span>Aircall — Q4</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- RECORDING / WFM -->
+<section class="sec rule" id="wfm">
+  <div class="shell">
+    <div class="sec-head" data-reveal>
+      <span class="tag tag-v">Recording, WFM &amp; workforce engagement</span>
+      <h2>Your quality program,<br>not a second one.</h2>
+      <p>Most buyers already own a workforce engagement suite. Overtone reads from its recorder and writes scores back into it, so coaching time gets scheduled against measured gaps rather than a supervisor's hunch — and nobody has to run two QA systems in parallel.</p>
+    </div>
+    <div class="intg" data-reveal>
+      <div class="intg-item"><i></i><span>Verint Workforce Engagement</span></div>
+      <div class="intg-item"><i></i><span>Verint Call Recording</span></div>
+      <div class="intg-item"><i></i><span>Verint Quality Management</span></div>
+      <div class="intg-item"><i></i><span>NICE IEX WFM</span></div>
+      <div class="intg-item"><i></i><span>NICE Engage recording</span></div>
+      <div class="intg-item"><i></i><span>Calabrio ONE</span></div>
+      <div class="intg-item"><i></i><span>Alvaria WEM</span></div>
+      <div class="intg-item"><i></i><span>Genesys WEM</span></div>
+      <div class="intg-item"><i></i><span>Red Box recording</span></div>
+      <div class="intg-item"><i></i><span>ASC Recording Insights</span></div>
+      <div class="intg-item"><i></i><span>Dubber</span></div>
+      <div class="intg-item"><i></i><span>injixo</span></div>
+      <div class="intg-item"><i></i><span>Assembled</span></div>
+      <div class="intg-item soon"><i></i><span>Playvox — Q4</span></div>
+    </div>
+
+    <div class="split split-top" style="margin-top:3rem" data-reveal>
+      <div>
+        <h3 style="margin-bottom:.8rem">What flows back into WFM</h3>
+        <p style="font-size:var(--s--1);color:var(--muted);line-height:1.65">Overtone writes composite and per-dimension scores, coaching tasks with due dates, and evidence links onto the agent record — so the schedule your planners build already accounts for who needs time off the phones and why.</p>
+      </div>
+      <div>
+        <div class="drow"><span class="k">Write</span><span>Composite &amp; dimension scores</span><span class="v ok">Per call</span></div>
+        <div class="drow"><span class="k">Write</span><span>Coaching task + evidence links</span><span class="v ok">On trigger</span></div>
+        <div class="drow"><span class="k">Write</span><span>Compliance pass / fail</span><span class="v ok">Per call</span></div>
+        <div class="drow"><span class="k">Read</span><span>Agent roster, queue, shift</span><span class="v">Hourly</span></div>
+        <div class="drow"><span class="k">Read</span><span>Recording index &amp; metadata</span><span class="v">Continuous</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CRM -->
+<section class="sec alt rule" id="crm">
+  <div class="shell">
+    <div class="sec-head" data-reveal>
+      <span class="tag">CRM &amp; service platforms</span>
+      <h2>The outcome half of the equation.</h2>
+      <p>Conversation quality only becomes a business metric once it is joined to what happened next. These connectors supply the outcome side — closed, saved, churned, escalated, resolved — that Outcome Intelligence needs.</p>
+    </div>
+    <div class="intg" data-reveal>
+      <div class="intg-item"><i></i><span>Salesforce Service Cloud</span></div>
+      <div class="intg-item"><i></i><span>Salesforce Sales Cloud</span></div>
+      <div class="intg-item"><i></i><span>Microsoft Dynamics 365</span></div>
+      <div class="intg-item"><i></i><span>ServiceNow CSM</span></div>
+      <div class="intg-item"><i></i><span>Zendesk</span></div>
+      <div class="intg-item"><i></i><span>HubSpot</span></div>
+      <div class="intg-item"><i></i><span>Freshdesk</span></div>
+      <div class="intg-item"><i></i><span>Pega Customer Service</span></div>
+      <div class="intg-item"><i></i><span>Guidewire InsuranceSuite</span></div>
+      <div class="intg-item"><i></i><span>Duck Creek</span></div>
+      <div class="intg-item"><i></i><span>SAP Service Cloud</span></div>
+      <div class="intg-item soon"><i></i><span>Epic Cheers — pilot</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- DATA / BI -->
+<section class="sec rule" id="data">
+  <div class="shell">
+    <div class="sec-head" data-reveal>
+      <span class="tag tag-v">Data, warehouse &amp; BI</span>
+      <h2>Your numbers, in your<br>reporting layer.</h2>
+      <p>Overtone is a source system, not a walled garden. Every metric it computes is available to your warehouse and BI stack — including on-premises Power BI Report Server for deployments with no cloud egress.</p>
+    </div>
+    <div class="intg" data-reveal>
+      <div class="intg-item"><i></i><span>Snowflake</span></div>
+      <div class="intg-item"><i></i><span>Databricks</span></div>
+      <div class="intg-item"><i></i><span>Microsoft Fabric</span></div>
+      <div class="intg-item"><i></i><span>Azure Synapse</span></div>
+      <div class="intg-item"><i></i><span>Amazon Redshift</span></div>
+      <div class="intg-item"><i></i><span>Google BigQuery</span></div>
+      <div class="intg-item"><i></i><span>SQL Server</span></div>
+      <div class="intg-item"><i></i><span>Power BI</span></div>
+      <div class="intg-item"><i></i><span>Power BI Report Server</span></div>
+      <div class="intg-item"><i></i><span>Tableau</span></div>
+      <div class="intg-item"><i></i><span>Looker</span></div>
+      <div class="intg-item"><i></i><span>Apache Kafka</span></div>
+      <div class="intg-item"><i></i><span>Amazon S3 / ADLS Gen2</span></div>
+      <div class="intg-item"><i></i><span>Parquet / CSV drops</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- IDENTITY + API -->
+<section class="sec alt rule" id="api">
+  <div class="shell split split-top">
+    <div data-reveal>
+      <span class="tag">Identity</span>
+      <h2 style="margin:1.1rem 0;font-size:var(--s-3)">Single sign-on, including the on-prem kind.</h2>
+      <p style="color:var(--muted);font-size:var(--s--1);line-height:1.65;margin-bottom:1.5rem">Cloud identity where you have it, and classic directory authentication where you don't — because plenty of regulated environments still cannot take a dependency on a cloud IdP.</p>
+      <div class="intg" style="grid-template-columns:repeat(auto-fill,minmax(140px,1fr))">
+        <div class="intg-item"><i></i><span>Microsoft Entra ID</span></div>
+        <div class="intg-item"><i></i><span>Okta</span></div>
+        <div class="intg-item"><i></i><span>Ping Identity</span></div>
+        <div class="intg-item"><i></i><span>OneLogin</span></div>
+        <div class="intg-item"><i></i><span>Active Directory</span></div>
+        <div class="intg-item"><i></i><span>AD FS</span></div>
+        <div class="intg-item"><i></i><span>SAML 2.0</span></div>
+        <div class="intg-item"><i></i><span>OIDC / OAuth 2.0</span></div>
+        <div class="intg-item"><i></i><span>SCIM provisioning</span></div>
+      </div>
+    </div>
+    <div data-reveal data-d="2">
+      <span class="tag tag-v">Build your own</span>
+      <h2 style="margin:1.1rem 0;font-size:var(--s-3)">If we don't have a connector, you can write one.</h2>
+      <p style="color:var(--muted);font-size:var(--s--1);line-height:1.65;margin-bottom:1.5rem">Everything the product does is available over a documented REST API with webhooks for event push. Homegrown recorder, in-house CRM, an internal scheduling system nobody outside your company has heard of — all fine.</p>
+      <div class="panel">
+        <div class="panel-bar"><span class="panel-title">REST API</span><span class="panel-live">v2</span></div>
+        <div class="panel-body">
+          <div class="drow"><span class="k">POST</span><span class="mono" style="font-size:.72rem">/v2/calls</span><span class="v">Submit audio</span></div>
+          <div class="drow"><span class="k">GET</span><span class="mono" style="font-size:.72rem">/v2/calls/{id}/transcript</span><span class="v">Diarized</span></div>
+          <div class="drow"><span class="k">GET</span><span class="mono" style="font-size:.72rem">/v2/calls/{id}/scores</span><span class="v">Per rubric</span></div>
+          <div class="drow"><span class="k">POST</span><span class="mono" style="font-size:.72rem">/v2/search</span><span class="v">Full-text</span></div>
+          <div class="drow"><span class="k">POST</span><span class="mono" style="font-size:.72rem">/v2/query</span><span class="v">Natural lang.</span></div>
+          <div class="drow"><span class="k">HOOK</span><span class="mono" style="font-size:.72rem">call.scored · risk.flagged</span><span class="v ok">Push</span></div>
+          <p style="font-size:var(--s--2);color:var(--muted);margin-top:.9rem;line-height:1.6">Typical custom connector build is around two weeks, and we do the first one with you as part of onboarding.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta rule">
+  <div class="aura cta-aura"></div>
+  <div class="shell-narrow">
+    <span class="tag" data-reveal>Check compatibility</span>
+    <h2 data-reveal data-d="1">Tell us what<br>you're running.</h2>
+    <p data-reveal data-d="2">Send us your telephony platform, recorder, WFM suite, and CRM. We'll confirm exactly what connects out of the box, what needs configuration, and what we'd need to build.</p>
+    <div class="btn-row" data-reveal data-d="3">
+      <a class="btn btn-primary btn-lg" href="/contact/">Check my stack</a>
+      <a class="btn btn-ghost btn-lg" href="/contact/#demo">Book a demo</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="foot">
+  <div class="shell">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="/" aria-label="Overtone by AlphaDecibel — home">
+          <svg class="brand-mark" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+            <rect x=".9" y=".9" width="24.2" height="24.2" rx="7.4" stroke="url(#m2)" stroke-width="1.4"/>
+            <g stroke="url(#m2)" stroke-width="2.1" stroke-linecap="round">
+              <path d="M7 16.4V9.6"/><path d="M11.3 19.4V6.6"/><path d="M15.6 17.6V8.4"/><path d="M19.9 14.4v-2.8"/>
+            </g>
+            <defs><linearGradient id="m2" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="26" y2="26"><stop stop-color="#4DE1E0"/><stop offset="1" stop-color="#7B5CFF"/></linearGradient></defs>
+          </svg>
+          <span class="brand-txt"><span class="brand-name">Overtone</span><span class="brand-sub">by AlphaDecibel</span></span>
+        </a>
+        <p>Conversation intelligence for contact centers that can't send their recordings somewhere else.</p>
+        <address class="foot-addr">
+          1201 Second Avenue, Suite 1500<br>
+          Seattle, WA 98101<br>
+          <a href="mailto:info@alphadecibel.com">info@alphadecibel.com</a>
+        </address>
+      </div>
+      <div>
+        <h5>Product</h5>
+        <ul>
+          <li><a href="/platform/">Platform</a></li>
+          <li><a href="/platform/#scoring">Scoring Studio</a></li>
+          <li><a href="/platform/#coaching">Coaching Copilot</a></li>
+          <li><a href="/platform/#outcomes">Outcome Intelligence</a></li>
+          <li><a href="/integrations/">Integrations</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Solutions</h5>
+        <ul>
+          <li><a href="/solutions/#agents">For agents</a></li>
+          <li><a href="/solutions/#supervisors">For supervisors</a></li>
+          <li><a href="/solutions/#quality">For quality leaders</a></li>
+          <li><a href="/solutions/#executives">For executives</a></li>
+          <li><a href="/solutions/#industries">By industry</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="/company/">About</a></li>
+          <li><a href="/security/">Security</a></li>
+          <li><a href="/company/#careers">Careers</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/contact/#demo">Book a demo</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© <span data-year>2026</span> AlphaDecibel, Inc.</span>
+      <span>Built in Seattle</span>
+      <span class="sp"><a href="/contact/">Privacy</a></span>
+      <span><a href="/contact/">Terms</a></span>
+      <span><a href="/security/">Trust</a></span>
+    </div>
+  </div>
+</footer>
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>

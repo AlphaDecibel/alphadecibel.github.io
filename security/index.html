@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Security &amp; data residency — Overtone by AlphaDecibel</title>
+<meta name="description" content="On-premises, private cloud, or single-tenant SaaS. No raw audio at rest off your network, PII redacted before persistence, zero training on customer data. SOC 2 Type II, ISO 27001, HIPAA, GDPR.">
+<link rel="canonical" href="https://www.alphadecibel.com/security/">
+<meta name="theme-color" content="#08090D">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.alphadecibel.com/security/">
+<meta property="og:title" content="Security &amp; data residency — Overtone by AlphaDecibel">
+<meta property="og:description" content="On-premises, private cloud, or single-tenant SaaS. No raw audio at rest off your network, PII redacted before persistence, zero training on customer data. SOC 2 Type II, ISO 27001, HIPAA, GDPR.">
+<meta property="og:image" content="https://www.alphadecibel.com/assets/img/og.png">
+<meta property="og:site_name" content="AlphaDecibel">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Security &amp; data residency — Overtone by AlphaDecibel">
+<meta name="twitter:description" content="On-premises, private cloud, or single-tenant SaaS. No raw audio at rest off your network, PII redacted before persistence, zero training on customer data. SOC 2 Type II, ISO 27001, HIPAA, GDPR.">
+<meta name="twitter:image" content="https://www.alphadecibel.com/assets/img/og.png">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=IBM+Plex+Mono:wght@400;500;600&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/site.css">
+</head>
+<body class="grid-bg">
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="shell nav-in">
+    <a class="brand" href="/" aria-label="Overtone by AlphaDecibel — home">
+      <svg class="brand-mark" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+        <rect x=".9" y=".9" width="24.2" height="24.2" rx="7.4" stroke="url(#m1)" stroke-width="1.4"/>
+        <g stroke="url(#m1)" stroke-width="2.1" stroke-linecap="round">
+          <path d="M7 16.4V9.6"/><path d="M11.3 19.4V6.6"/><path d="M15.6 17.6V8.4"/><path d="M19.9 14.4v-2.8"/>
+        </g>
+        <defs><linearGradient id="m1" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="26" y2="26"><stop stop-color="#4DE1E0"/><stop offset="1" stop-color="#7B5CFF"/></linearGradient></defs>
+      </svg>
+      <span class="brand-txt"><span class="brand-name">Overtone</span><span class="brand-sub">by AlphaDecibel</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Main">
+      <a href="/platform/">Platform</a>
+      <a href="/solutions/">Solutions</a>
+      <a href="/integrations/">Integrations</a>
+      <a href="/security/" aria-current="page">Security</a>
+      <a href="/company/">Company</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-ghost btn-sm" href="/contact/">Contact</a>
+      <a class="btn btn-primary btn-sm" href="/contact/#demo">Book a demo</a>
+    </div>
+    <button class="burger" aria-expanded="false" aria-controls="mmenu" aria-label="Toggle menu"><span></span></button>
+  </div>
+</header>
+<div class="mobile-menu" id="mmenu">
+  <a href="/platform/">Platform</a>
+  <a href="/solutions/">Solutions</a>
+  <a href="/integrations/">Integrations</a>
+  <a href="/security/">Security</a>
+  <a href="/company/">Company</a>
+  <a href="/contact/">Contact</a>
+  <a class="btn btn-primary" href="/contact/#demo">Book a demo</a>
+</div>
+<main id="main">
+<section class="phero">
+  <div class="aura phero-aura"></div>
+  <div class="shell">
+    <div class="crumb"><a href="/">Home</a><i>/</i>Security</div>
+    <span class="tag" data-hero="1">Security &amp; data residency</span>
+    <h1 data-hero="2">Built to survive<br>your security review.</h1>
+    <p class="lede" data-hero="3">Most conversation intelligence is SaaS-only, which means your customer recordings leave your network and live on a vendor's infrastructure. For a lot of insurers, banks, and health systems that single fact ends the evaluation. Overtone was architected the other way round.</p>
+    <div class="hero-note" data-hero="5" style="margin-top:1.8rem">
+      <span><i class="dot"></i> On-prem system of record</span>
+      <span><i class="dot dot-v"></i> No raw audio at rest off-network</span>
+      <span><i class="dot dot-a"></i> Zero training on your data</span>
+    </div>
+  </div>
+</section>
+
+<!-- MODELS -->
+<section class="sec-tight rule">
+  <div class="shell">
+    <div class="sec-head" data-reveal>
+      <span class="tag">Deployment models</span>
+      <h2>Three shapes. You pick<br>where the data lives.</h2>
+    </div>
+    <div class="deploy">
+      <article class="dep pick" data-reveal>
+        <span class="dep-badge">Most regulated</span>
+        <h3>On-premises</h3>
+        <div class="dep-sub">Your data center</div>
+        <p style="font-size:var(--s--1);color:var(--muted);line-height:1.62">Transcripts, scores, metrics, and the search index all persist in your SQL Server. Audio is streamed into memory from your recorder and discarded after transcription — never written to disk anywhere.</p>
+        <ul>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 6"/></svg>System of record never leaves your network</li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 6"/></svg>Outbound HTTPS only — no inbound path exists</li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 6"/></svg>Windows Integrated Auth or AD FS</li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 6"/></svg>Air-gapped variant with local inference</li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 6"/></svg>Runs on VMs or bare metal — no Kubernetes required</li>
+        </ul>
+      </article>
+      <article class="dep" data-reveal data-d="1">
+        <h3>Private cloud</h3>
+        <div class="dep-sub">Your tenant</div>
+        <p style="font-size:var(--s--1);color:var(--muted);line-height:1.62">We ship containers and Terraform into your own Azure, AWS, or GCP subscription. You hold the keys, own the network, keep the logs, and pay the cloud bill directly.</p>
+        <ul>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 6"/></svg>Customer-managed encryption keys</li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 6"/></svg>Region pinning for residency requirements</li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 6"/></svg>Private endpoints, no public ingress</li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 6"/></svg>Every audit event streamed to your SIEM</li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 6"/></svg>You can revoke our access at any time</li>
+        </ul>
+      </article>
+      <article class="dep" data-reveal data-d="2">
+        <h3>Managed SaaS</h3>
+        <div class="dep-sub">Our cloud</div>
+        <p style="font-size:var(--s--1);color:var(--muted);line-height:1.62">Single-tenant storage per customer in a US or EU region. Fastest path to value, and you can migrate to private cloud later without re-implementing.</p>
+        <ul>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 6"/></svg>Single-tenant storage, never pooled</li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 6"/></svg>AES-256 at rest, TLS 1.3 in transit</li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 6"/></svg>US or EU region election at contract</li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 6"/></svg>SSO via Entra ID, Okta, or Ping</li>
+          <li><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5 8 14.5 16 6"/></svg>Documented exit and data-return process</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FLOW -->
+<section class="sec alt rule">
+  <div class="shell">
+    <div class="sec-head" data-reveal>
+      <span class="tag tag-v">Data flow</span>
+      <h2>Where audio goes,<br>and where it stops.</h2>
+      <p>This is the diagram your security architect actually wants. In an on-premises deployment there are exactly three places data exists, and only one of them persists anything.</p>
+    </div>
+    <div class="flow" data-reveal>
+      <div class="flow-node secure">
+        <span class="flow-k">Never leaves</span>
+        <h4>1 · Your recorder</h4>
+        <p>Recordings stay in the source system. Overtone reads them over your own network via API, into memory, and releases the buffer the moment transcription returns. Nothing is copied to a staging store.</p>
+      </div>
+      <div class="flow-node transient">
+        <span class="flow-k">Transient only</span>
+        <h4>2 · Inference</h4>
+        <p>Speech and language models receive a call and return text. Nothing is retained, logged, cached, or used for training — enforced contractually with providers and verified by architecture tests in every release.</p>
+      </div>
+      <div class="flow-node secure">
+        <span class="flow-k">System of record</span>
+        <h4>3 · Your database</h4>
+        <p>Transcripts, scores, metrics, and the full-text index persist only in your SQL Server. Retention, backup, and destruction follow your policy, on your schedule, under your DBA's control.</p>
+      </div>
+    </div>
+
+    <div class="split split-top" style="margin-top:3.2rem" data-reveal>
+      <div>
+        <h3 style="margin-bottom:1rem">Things Overtone never does</h3>
+        <p style="color:var(--muted);font-size:var(--s--1);line-height:1.65">Negative guarantees are usually more useful in a security review than positive ones, so here are ours in plain language.</p>
+      </div>
+      <div>
+        <div class="drow"><span class="k">Never</span><span>Write raw audio to disk outside your boundary</span><span class="v ok">Enforced</span></div>
+        <div class="drow"><span class="k">Never</span><span>Train shared models on your conversations</span><span class="v ok">Contractual</span></div>
+        <div class="drow"><span class="k">Never</span><span>Open an inbound network path into your estate</span><span class="v ok">Architectural</span></div>
+        <div class="drow"><span class="k">Never</span><span>Persist PII in the search index</span><span class="v ok">Pre-index redaction</span></div>
+        <div class="drow"><span class="k">Never</span><span>Pool customer data in shared storage</span><span class="v ok">Single tenant</span></div>
+        <div class="drow"><span class="k">Never</span><span>Access your production data without a ticket</span><span class="v ok">Break-glass, logged</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PII -->
+<section class="sec rule">
+  <div class="shell split">
+    <div data-reveal>
+      <span class="tag">Privacy</span>
+      <h2 style="margin:1.1rem 0">PII is removed before<br>anything is written down.</h2>
+      <p class="lede">Redaction runs between transcription and persistence — not as a display filter afterwards. By the time a transcript reaches your database, the sensitive spans are already gone or tokenized.</p>
+      <ul class="engine-list" style="margin-top:1.8rem">
+        <li>Card numbers, CVV, and the whole PCI capture window</li>
+        <li>Government identifiers — SSN, SIN, NHS, national ID</li>
+        <li>Dates of birth, addresses, phone numbers, email addresses</li>
+        <li>Policy, member, claim, and account numbers</li>
+        <li>Protected health information under HIPAA</li>
+        <li>Custom patterns you define — internal codes, partner references</li>
+      </ul>
+      <p style="margin-top:1.6rem;padding:1rem 1.2rem;border-left:2px solid var(--violet);background:rgba(123,92,255,.06);font-size:var(--s--1);color:var(--text-2);border-radius:0 12px 12px 0">You choose per data class whether a masked span is <strong>recoverable by privileged role</strong> for dispute resolution, or <strong>irreversibly destroyed</strong> at capture. Most regulated customers destroy PCI data and tokenize everything else.</p>
+    </div>
+    <div data-reveal data-d="2">
+      <div class="panel">
+        <div class="panel-bar"><span class="panel-title">Redaction pass</span><span class="chip chip-l">Pre-persistence</span></div>
+        <div class="panel-body">
+          <div class="tline cust" style="animation:none"><span class="ts">02:19</span><span><span class="who">Customer</span> <span class="txt">My policy is <span class="chip chip-a">[POLICY_ID]</span> and the card ends <span class="chip chip-a">[PAN_LAST4]</span>, expiry <span class="chip chip-a">[EXP]</span>.</span></span></div>
+          <div class="tline agent" style="animation:none"><span class="ts">02:31</span><span><span class="who">Agent</span> <span class="txt">Got it. And can you confirm your date of birth?</span></span></div>
+          <div class="tline cust" style="animation:none"><span class="ts">02:36</span><span><span class="who">Customer</span> <span class="txt"><span class="chip chip-a">[DOB]</span></span></span></div>
+          <div style="margin-top:1.2rem;padding-top:1.2rem;border-top:1px solid var(--line)">
+            <div class="drow"><span class="k">Detected</span><span>Sensitive spans this call</span><span class="v">7</span></div>
+            <div class="drow"><span class="k">Destroyed</span><span>PCI — irreversible</span><span class="v ok">3</span></div>
+            <div class="drow"><span class="k">Tokenized</span><span>Recoverable by QA lead role</span><span class="v">4</span></div>
+            <div class="drow"><span class="k">Index</span><span>PII entering search index</span><span class="v ok">0</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPLIANCE -->
+<section class="sec alt rule" id="compliance">
+  <div class="shell">
+    <div class="sec-head sec-head-center" data-reveal>
+      <span class="tag">Compliance</span>
+      <h2>Attestations and frameworks.</h2>
+      <p>Reports, penetration test summaries, and our completed CAIQ are available under NDA. Ask your account team or write to security@alphadecibel.com.</p>
+    </div>
+    <div class="cols c4" data-reveal>
+      <article class="card"><span class="card-num">Audited</span><h4>SOC 2 Type II</h4><p>Security, availability, and confidentiality. Annual audit with continuous control monitoring between cycles.</p></article>
+      <article class="card"><span class="card-num">Certified</span><h4>ISO/IEC 27001</h4><p>Information security management system covering product, infrastructure, and corporate operations.</p></article>
+      <article class="card"><span class="card-num">Aligned</span><h4>HIPAA</h4><p>BAA available. PHI masked before persistence; on-premises deployment keeps PHI entirely inside your covered entity.</p></article>
+      <article class="card"><span class="card-num">Compliant</span><h4>GDPR &amp; UK GDPR</h4><p>EU region election, standard contractual clauses, DPA, and documented subprocessor list with change notice.</p></article>
+      <article class="card"><span class="card-num">Compliant</span><h4>CCPA / CPRA</h4><p>Consumer rights request handling, including deletion propagation into transcripts and the search index.</p></article>
+      <article class="card"><span class="card-num">Scoped</span><h4>PCI DSS</h4><p>Card data destroyed at capture, so Overtone reduces rather than expands your cardholder data environment.</p></article>
+      <article class="card"><span class="card-num">Supported</span><h4>NAIC &amp; state DOI</h4><p>Disclosure, replacement, and suitability evidence packs for insurance regulators across 50 states.</p></article>
+      <article class="card"><span class="card-num">In progress</span><h4>FedRAMP Moderate</h4><p>Pursuing authorization for public sector deployments. Target authorization in the next fiscal year.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- PRACTICES -->
+<section class="sec rule">
+  <div class="shell">
+    <div class="sec-head" data-reveal>
+      <span class="tag tag-v">Engineering practice</span>
+      <h2>How we actually operate.</h2>
+    </div>
+    <div class="tbl-wrap" data-reveal>
+      <table class="tbl">
+        <thead><tr><th>Area</th><th>Practice</th></tr></thead>
+        <tbody>
+          <tr><td>Encryption</td><td>AES-256 at rest, TLS 1.3 in transit. Customer-managed keys on private cloud and on-premises.</td></tr>
+          <tr><td>Access control</td><td>Least privilege, enforced MFA, quarterly access reviews. Production access is break-glass, ticketed, time-boxed, and logged.</td></tr>
+          <tr><td>Network</td><td>Outbound-only from on-premises deployments. Private endpoints and no public ingress in private cloud.</td></tr>
+          <tr><td>Secrets</td><td>Hardware-backed key storage. No credentials in source, enforced by pre-commit and CI scanning.</td></tr>
+          <tr><td>SDLC</td><td>Mandatory peer review, SAST and dependency scanning on every pull request, signed builds, reproducible releases.</td></tr>
+          <tr><td>Testing</td><td>Automated architecture tests assert no audio write path and no cloud storage resource exists in on-prem builds.</td></tr>
+          <tr><td>Penetration testing</td><td>Independent third-party test annually plus after any material architecture change. Summary shared under NDA.</td></tr>
+          <tr><td>Vulnerability management</td><td>Critical patched within 7 days, high within 30. Continuous dependency monitoring with automated PRs.</td></tr>
+          <tr><td>Monitoring</td><td>Centralized audit logging with tamper-evident storage. Customer-side events streamable to your SIEM.</td></tr>
+          <tr><td>Incident response</td><td>24×7 on-call, documented runbooks, tabletop exercises twice yearly. Customer notification within 24 hours of confirmed incident.</td></tr>
+          <tr><td>Business continuity</td><td>Active-passive DR with documented RPO of 15 minutes and RTO of 4 hours. Restore tested quarterly.</td></tr>
+          <tr><td>Personnel</td><td>Background checks, annual security training, role-based training for engineers handling customer data.</td></tr>
+          <tr><td>Subprocessors</td><td>Published list with 30 days' notice before any addition. On-premises deployments can run with none.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="split split-top" style="margin-top:3rem" data-reveal>
+      <div>
+        <h3 style="margin-bottom:.8rem">Responsible disclosure</h3>
+        <p style="font-size:var(--s--1);color:var(--muted);line-height:1.65">If you believe you've found a vulnerability in Overtone or in our infrastructure, we want to hear about it before anyone else does. Write to <a href="mailto:security@alphadecibel.com" style="color:var(--cyan)">security@alphadecibel.com</a>. We acknowledge within one business day, keep you updated through remediation, and credit researchers who ask to be named.</p>
+      </div>
+      <div>
+        <h3 style="margin-bottom:.8rem">Documentation available under NDA</h3>
+        <div class="chips">
+          <span class="chip chip-c">SOC 2 Type II report</span>
+          <span class="chip chip-c">ISO 27001 certificate</span>
+          <span class="chip chip-c">Penetration test summary</span>
+          <span class="chip chip-c">CAIQ / SIG Lite</span>
+          <span class="chip chip-c">Architecture &amp; data-flow diagrams</span>
+          <span class="chip chip-c">DPA and subprocessor list</span>
+          <span class="chip chip-c">BAA template</span>
+          <span class="chip chip-c">BC/DR test results</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta rule">
+  <div class="aura cta-aura"></div>
+  <div class="shell-narrow">
+    <span class="tag" data-reveal>Security review</span>
+    <h2 data-reveal data-d="1">Send us your<br>questionnaire.</h2>
+    <p data-reveal data-d="2">We'd rather start with your security team than end with them. Send over your vendor assessment and we'll return it completed, with architecture diagrams, before the first commercial conversation.</p>
+    <div class="btn-row" data-reveal data-d="3">
+      <a class="btn btn-primary btn-lg" href="/contact/">Start a security review</a>
+      <a class="btn btn-ghost btn-lg" href="mailto:security@alphadecibel.com">security@alphadecibel.com</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="foot">
+  <div class="shell">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="/" aria-label="Overtone by AlphaDecibel — home">
+          <svg class="brand-mark" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+            <rect x=".9" y=".9" width="24.2" height="24.2" rx="7.4" stroke="url(#m2)" stroke-width="1.4"/>
+            <g stroke="url(#m2)" stroke-width="2.1" stroke-linecap="round">
+              <path d="M7 16.4V9.6"/><path d="M11.3 19.4V6.6"/><path d="M15.6 17.6V8.4"/><path d="M19.9 14.4v-2.8"/>
+            </g>
+            <defs><linearGradient id="m2" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="26" y2="26"><stop stop-color="#4DE1E0"/><stop offset="1" stop-color="#7B5CFF"/></linearGradient></defs>
+          </svg>
+          <span class="brand-txt"><span class="brand-name">Overtone</span><span class="brand-sub">by AlphaDecibel</span></span>
+        </a>
+        <p>Conversation intelligence for contact centers that can't send their recordings somewhere else.</p>
+        <address class="foot-addr">
+          1201 Second Avenue, Suite 1500<br>
+          Seattle, WA 98101<br>
+          <a href="mailto:info@alphadecibel.com">info@alphadecibel.com</a>
+        </address>
+      </div>
+      <div>
+        <h5>Product</h5>
+        <ul>
+          <li><a href="/platform/">Platform</a></li>
+          <li><a href="/platform/#scoring">Scoring Studio</a></li>
+          <li><a href="/platform/#coaching">Coaching Copilot</a></li>
+          <li><a href="/platform/#outcomes">Outcome Intelligence</a></li>
+          <li><a href="/integrations/">Integrations</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Solutions</h5>
+        <ul>
+          <li><a href="/solutions/#agents">For agents</a></li>
+          <li><a href="/solutions/#supervisors">For supervisors</a></li>
+          <li><a href="/solutions/#quality">For quality leaders</a></li>
+          <li><a href="/solutions/#executives">For executives</a></li>
+          <li><a href="/solutions/#industries">By industry</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="/company/">About</a></li>
+          <li><a href="/security/">Security</a></li>
+          <li><a href="/company/#careers">Careers</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/contact/#demo">Book a demo</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© <span data-year>2026</span> AlphaDecibel, Inc.</span>
+      <span>Built in Seattle</span>
+      <span class="sp"><a href="/contact/">Privacy</a></span>
+      <span><a href="/contact/">Terms</a></span>
+      <span><a href="/security/">Trust</a></span>
+    </div>
+  </div>
+</footer>
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>
