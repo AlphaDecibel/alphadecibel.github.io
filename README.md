@@ -72,12 +72,12 @@ Every push to `main` republishes within a minute or two.
 
 ## 3. Point www.alphadecibel.com at it
 
-**The `CNAME` file is currently parked in `_disabled/`.** Leave it there until DNS
-resolves — GitHub 301-redirects `alphadecibel.github.io` to the custom domain the
-moment it sees that file, which would break the preview URL.
+**Live.** `CNAME` at the repo root holds `www.alphadecibel.com`, and GoDaddy DNS
+points at GitHub Pages. `alphadecibel.github.io` now 301-redirects to the custom
+domain.
 
-Add these records at your DNS provider (the apex A/AAAA records make the bare
-domain redirect to `www`):
+Records in place at GoDaddy (the apex A records make the bare domain redirect to
+`www`; the Zoho MX and SPF records must be left alone or email breaks):
 
 | Type  | Name  | Value                                      |
 |-------|-------|--------------------------------------------|
@@ -91,16 +91,10 @@ domain redirect to `www`):
 | AAAA  | `@`   | `2606:50c0:8002::153`                       |
 | AAAA  | `@`   | `2606:50c0:8003::153`                       |
 
-Once those records resolve, turn the domain on:
+| CNAME | `www` | `alphadecibel.github.io` |
 
-```bash
-git mv _disabled/CNAME CNAME
-git commit -m "Enable custom domain"
-git push
-```
-
-Then in **Settings → Pages**, tick **Enforce HTTPS** once the certificate provisions
-(usually under an hour, occasionally up to 24).
+Certificate provisioning is automatic. **Enforce HTTPS** is enabled in
+Settings → Pages.
 
 ---
 
